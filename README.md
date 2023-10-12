@@ -10,6 +10,8 @@ Combining [nostr](https://nostr.net) with [standard template construct](https://
 - Add links to sources in replies
 - Package in a simply deployable way
 
-# Demo
+## Demo
 ![image](https://github.com/aljazceru/sciencestr/assets/4439523/51b8d7d0-48ed-4218-9467-5c9f5a6928f5)
 
+## How to run
+tbd
