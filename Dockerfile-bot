@@ -1,0 +1,11 @@
+# Dockerfile-science-bot
+FROM python:3.9
+
+WORKDIR /app
+
+COPY requirements-bot.txt ./
+RUN pip install --no-cache-dir -r requirements-science-bot.txt
+
+COPY science-bot.py .
+
+CMD ["python", "./science-bot.py"]

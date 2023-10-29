@@ -3,8 +3,8 @@ services:
   ipfs_host:
     image: ipfs/kubo:latest
     volumes:
-      - ./ipfs/staging/:/export
-      - ./ipfs/data:/data/ipfs
+      - /home/lio/ipfs/staging/:/export
+      - /home/lio/ipfs/data:/data/ipfs
     ports:
       - 4001:4001
       - 4001:4001/udp
@@ -17,4 +17,22 @@ services:
     ports:
       - 6333:6333
       - 6334:6334
+    restart: always
+
+  science_bot:
+    build:
+      context: .
+      dockerfile: Dockerfile-science-bot
+    depends_on:
+      - api
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile-api
+    ports:
+      - 6000:6000
+    depends_on:
+      - ipfs_host
+      - qdrant
     restart: always
