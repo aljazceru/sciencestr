@@ -4,13 +4,6 @@ Nostr bot that answers scientific questions by accessing decentralized repositor
 ## How 
 Combining [nostr](https://nostr.net) with [standard template construct](https://github.com/nexus-stc/stc) which hosts vast amount of academic research and other content on ipfs.
 
-## Roadmap:
-- PoC with OpenAI
-- Poc with self-hosted LLM
-- Add links to sources in replies
-- Package in a simply deployable way
-
-
 ## How to run
 ### Manually
 ```
@@ -39,5 +32,5 @@ docker-compose up
 ```
 
 ## Demo
-![image](./screenshot2.png)
-![image](./screenshot3.png)
+![image](./screenshot2.jpg)
+![image](./screenshot3.jpg)
